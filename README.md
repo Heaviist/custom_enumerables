@@ -13,4 +13,5 @@ Rebuild some methods from the Enumerable module
 2. I guess it's going to be a struggle. Not every method will be obvious and I don't expect to always find the most efficient way of coding it.
 
 # Results and Evaluation
-To be added later
+1. It took quite a bit of mental gymnastics and letting the concept settle in before it became kind of apparent how to deal with these assigments.
+2. Once the basics were there, with a for loop and yielding whatever variables were needed, it all kind of ended up being quite obvious.
