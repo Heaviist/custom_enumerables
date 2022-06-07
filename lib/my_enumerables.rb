@@ -2,7 +2,15 @@
 
 # Custom enumerables
 module Enumerable
-  # Your code goes here
+  def my_each_with_index
+    return to_enum unless block_given?
+
+    i = 0
+    for element in self
+      yield(element, i)
+      i += 1
+    end
+  end
 end
 
 # Custom each method for arrays
