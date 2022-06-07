@@ -19,7 +19,7 @@ module Enumerable
     for element in self
       selection << element if yield(element)
     end
-    return selection
+    selection
   end
 
 end
