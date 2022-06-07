@@ -11,6 +11,17 @@ module Enumerable
       i += 1
     end
   end
+
+  def my_select
+    return to_enum unless block_given?
+
+    selection = []
+    for element in self
+      selection << element if yield(element)
+    end
+    return selection
+  end
+
 end
 
 # Custom each method for arrays
