@@ -8,6 +8,8 @@ end
 # Custom each method for arrays
 class Array
   def my_each
+    return to_enum unless block_given?
+
     for element in self
       yield element
     end
